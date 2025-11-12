@@ -62,16 +62,17 @@
 
   <main class="max-w-6xl mx-auto px-6 py-12">
     <!-- Quiénes somos -->
-    <section id="sobre-nosotros" class="bg-white rounded-lg shadow-lg p-8 md:p-12 grid md:grid-cols-2 gap-8">
-      <div class="flex items-center justify-center">
-        <div class="text-center md:text-left">
-          <div class="text-6xl mb-4">🎵</div>
-          <h2 class="text-2xl font-semibold text-brand-orange">¿Quiénes Somos?</h2>
-        </div>
+    <section id="sobre-nosotros" class="bg-brand-gray rounded-lg shadow-lg overflow-hidden grid md:grid-cols-2">
+      <!-- Columna izquierda con imagen de fondo y título -->
+      <div class="relative flex items-center justify-center pl-4 pt-4 pb-4">
+        <!-- Imagen de fondo -->
+        <img src="images/Quisommesnous.png" alt="Quienes Somos Background" class="w-full h-auto">
+        <!-- Título sobre la imagen -->
+        <h2 class="absolute z-10 text-3xl md:text-4xl font-semibold text-brand-orange text-center drop-shadow-lg px-4">¿Quiénes Somos?</h2>
       </div>
-      <div>
-        <p class="mt-4 text-sm leading-relaxed text-brand-blue">En musique.artstudio3d nos dedicamos a la edición y producción musical de alto nivel. Nuestro equipo está conformado por expertos apasionados por la música...</p>
-        <a class="inline-block mt-6 bg-brand-orange text-white px-4 py-2 rounded text-sm font-medium hover:bg-orange-700 transition" href="nosotros.html">Descubre más</a>
+      <!-- Columna derecha con texto -->
+      <div class="p-8 md:p-12 flex items-center">
+        <p class="text-sm md:text-base leading-relaxed text-brand-blue">En musique.artstudio3d nos dedicamos a la edición y producción musical de alto nivel. Nuestro equipo está conformado por expertos apasionados por la música...</p>
       </div>
     </section>
 
