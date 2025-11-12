@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <title>Nuestro Equipo - musique.artstudio3d</title>
+</head>
+<body class="antialiased text-brand-blue bg-gray-50">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-30 bg-brand-blue shadow-md">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between py-6 md:py-8">
+        <a class="text-brand-orange font-semibold tracking-wide text-lg" href="index.html">musique.artstudio3d</a>
+        <button id="menuBtn" class="md:hidden text-white focus:outline-none bg-brand-blue/60 p-2 rounded-md hover:bg-brand-blue transition">
+          <svg id="menuIcon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="closeIcon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+        <nav id="nav" class="hidden md:flex gap-6 text-white">
+          <a href="index.html#inicio" class="hover:underline">Inicio</a>
+          <a href="index.html#sobre-nosotros" class="hover:underline">Sobre Nosotros</a>
+          <a href="index.html#servicios" class="hover:underline">Servicios</a>
+          <a href="index.html#contact" class="hover:underline">Contacto</a>
+        </nav>
+      </div>
+      <!-- Mobile menu -->
+      <nav id="mobileNav" class="hidden md:hidden pb-6 bg-brand-blue/90 -mx-6 px-6 rounded-b-lg">
+        <div class="flex flex-col gap-4 text-white pt-2">
+          <a href="index.html#inicio" class="hover:text-brand-orange transition py-2 border-b border-white/20">Inicio</a>
+          <a href="index.html#sobre-nosotros" class="hover:text-brand-orange transition py-2 border-b border-white/20">Sobre Nosotros</a>
+          <a href="index.html#servicios" class="hover:text-brand-orange transition py-2 border-b border-white/20">Servicios</a>
+          <a href="index.html#contact" class="hover:text-brand-orange transition py-2">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <!-- Encabezado -->
+    <div class="text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-brand-orange mb-4">Nuestro Equipo</h1>
+      <p class="text-lg text-brand-blue max-w-3xl mx-auto">
+        Conoce a los profesionales apasionados que hacen posible cada proyecto musical en musique.artstudio3d
+      </p>
+    </div>
+
+    <!-- Grid de miembros del equipo -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Miembro 1 -->
+      <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="h-64 bg-gradient-to-br from-brand-orange to-orange-600 flex items-center justify-center">
+          <div class="text-white text-6xl">👤</div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-brand-blue mb-2">Nombre Apellido</h3>
+          <p class="text-brand-orange font-medium mb-3">Director Musical</p>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Más de 15 años de experiencia en producción musical y dirección de orquesta. Especializado en composiciones originales.
+          </p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-brand-orange hover:text-orange-700 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" class="text-brand-orange hover:text-orange-700 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Miembro 2 -->
+      <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="h-64 bg-gradient-to-br from-brand-blue to-gray-700 flex items-center justify-center">
+          <div class="text-white text-6xl">👤</div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-brand-blue mb-2">Nombre Apellido</h3>
+          <p class="text-brand-orange font-medium mb-3">Ingeniero de Sonido</p>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Experto en mezcla y masterización. Ha trabajado con artistas reconocidos internacionalmente en diversos géneros musicales.
+          </p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-brand-orange hover:text-orange-700 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" class="text-brand-orange hover:text-orange-700 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Miembro 3 -->
+      <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="h-64 bg-gradient-to-br from-brand-orange to-orange-600 flex items-center justify-center">
+          <div class="text-white text-6xl">👤</div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-brand-blue mb-2">Nombre Apellido</h3>
+          <p class="text-brand-orange font-medium mb-3">Productor Musical</p>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Productor creativo con un oído único para identificar y desarrollar talento. Especializado en música contemporánea.
+          </p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-brand-orange hover:text-orange-700 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" class="text-brand-orange hover:text-orange-700 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Puedes añadir más miembros copiando el patrón anterior -->
+
+    </div>
+
+    <!-- Llamada a la acción -->
+    <div class="mt-16 text-center bg-white rounded-lg shadow-lg p-8">
+      <h2 class="text-2xl font-bold text-brand-blue mb-4">¿Quieres formar parte del equipo?</h2>
+      <p class="text-gray-600 mb-6">Estamos siempre buscando talento apasionado por la música</p>
+      <a href="index.html#contact" class="inline-block bg-brand-orange text-white px-6 py-3 rounded-md font-medium hover:bg-orange-700 transition">
+        Contáctanos
+      </a>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a href="index.html" class="inline-block text-brand-orange hover:text-orange-700 transition">
+        ← Volver al Inicio
+      </a>
+    </div>
+  </main>
+
+  <footer class="bg-brand-blue text-white mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-brand-gray">musique.artstudio3d © 2025</div>
+        <nav class="mt-4 md:mt-0 space-x-4 text-sm">
+          <a href="index.html#inicio" class="opacity-90 hover:text-brand-orange transition">Inicio</a>
+          <a href="index.html#servicios" class="opacity-90 hover:text-brand-orange transition">Servicios</a>
+          <a href="menciones-legales.html" class="opacity-90 hover:text-brand-orange transition">Menciones Legales</a>
+          <a href="politica-privacidad.html" class="opacity-90 hover:text-brand-orange transition">Política de Privacidad</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>

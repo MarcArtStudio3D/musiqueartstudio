@@ -1,0 +1,20 @@
+{
+  "name": "MusiqueArtStudio3D",
+  "version": "1.0.0",
+  "description": "A project using Tailwind CSS for styling.",
+  "main": "src/js/main.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/css/styles.css -o ./src/styles.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/css/styles.css -o ./src/styles.css --watch"
+  },
+  "author": "ArtStudio3D",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.2.19",
+    "postcss": "^8.4.6",
+    "autoprefixer": "^10.4.2"
+  },
+  "devDependencies": {
+    "postcss-cli": "^9.1.0"
+  }
+}

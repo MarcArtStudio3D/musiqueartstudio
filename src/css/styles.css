@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colores de la marca */
+:root {
+  --brand-orange: #FF6F00;
+  --brand-white: #FFFFFF;
+  --brand-blue: #1E2A2F;
+  --brand-gray: #D0D3D6;
+}

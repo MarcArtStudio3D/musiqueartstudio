@@ -1,0 +1,181 @@
+<!-- ...existing code... -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <title>musique.artstudio3d</title>
+</head>
+<body class="antialiased text-brand-blue">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-30 bg-brand-blue shadow-md">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between py-6 md:py-8">
+        <a class="text-brand-orange font-semibold tracking-wide text-lg" href="index.html">musique.artstudio3d</a>
+        <button id="menuBtn" class="md:hidden text-white focus:outline-none bg-brand-blue/60 p-2 rounded-md hover:bg-brand-blue transition">
+          <svg id="menuIcon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="closeIcon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+        <nav id="nav" class="hidden md:flex gap-6 text-white">
+          <a href="#inicio" class="hover:underline">Inicio</a>
+          <a href="#sobre-nosotros" class="hover:underline">Sobre Nosotros</a>
+          <a href="#servicios" class="hover:underline">Servicios</a>
+          <a href="#contact" class="hover:underline">Contacto</a>
+        </nav>
+      </div>
+      <!-- Mobile menu -->
+      <nav id="mobileNav" class="hidden md:hidden pb-6 bg-brand-blue/90 -mx-6 px-6 rounded-b-lg">
+        <div class="flex flex-col gap-4 text-white pt-2">
+          <a href="#inicio" class="hover:text-brand-orange transition py-2 border-b border-white/20">Inicio</a>
+          <a href="#sobre-nosotros" class="hover:text-brand-orange transition py-2 border-b border-white/20">Sobre Nosotros</a>
+          <a href="#servicios" class="hover:text-brand-orange transition py-2 border-b border-white/20">Servicios</a>
+          <a href="#contact" class="hover:text-brand-orange transition py-2">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative overflow-hidden">
+    <!-- Slideshow de imágenes -->
+    <div class="relative w-full">
+      <img id="slide1" class="w-full h-auto transition-opacity duration-1000 opacity-100" src="images/slide1.png" alt="Slide 1">
+      <img id="slide2" class="absolute top-0 left-0 w-full h-auto transition-opacity duration-1000 opacity-0" src="images/slide2.png" alt="Slide 2">
+      <img id="slide3" class="absolute top-0 left-0 w-full h-auto transition-opacity duration-1000 opacity-0" src="images/slide3.png" alt="Slide 3">
+    </div>
+    <!-- Overlay oscuro para mejorar legibilidad del texto -->
+    <div class="absolute inset-0 bg-black/40 z-10"></div>
+    <!-- Texto sobre las imágenes -->
+    <div class="absolute inset-0 flex items-center justify-center z-20">
+      <div class="text-center text-white px-6">
+        <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold drop-shadow-lg">Bienvenido a musique.artstudio3d</h1>
+        <p class="mt-4 text-base md:text-xl text-brand-orange font-bold drop-shadow-lg">Edición y producción musical de alto nivel</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <!-- Quiénes somos -->
+    <section id="sobre-nosotros" class="bg-white rounded-lg shadow-lg p-8 md:p-12 grid md:grid-cols-2 gap-8">
+      <div class="flex items-center justify-center">
+        <div class="text-center md:text-left">
+          <div class="text-6xl mb-4">🎵</div>
+          <h2 class="text-2xl font-semibold text-brand-orange">¿Quiénes Somos?</h2>
+        </div>
+      </div>
+      <div>
+        <p class="mt-4 text-sm leading-relaxed text-brand-blue">En musique.artstudio3d nos dedicamos a la edición y producción musical de alto nivel. Nuestro equipo está conformado por expertos apasionados por la música...</p>
+        <a class="inline-block mt-6 bg-brand-orange text-white px-4 py-2 rounded text-sm font-medium hover:bg-orange-700 transition" href="nosotros.html">Descubre más</a>
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section class="mt-16 text-center">
+      <h3 class="text-xl text-brand-orange font-medium">Nuestros Valores</h3>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <div class="text-brand-orange text-4xl mb-2">🎨</div>
+          <h4 class="font-semibold text-brand-blue">Creatividad</h4>
+          <p class="text-sm mt-2">Fomentamos la innovación y originalidad en cada proyecto.</p>
+        </div>
+        <div>
+          <div class="text-brand-orange text-4xl mb-2">🤝</div>
+          <h4 class="font-semibold text-brand-blue">Colaboración</h4>
+          <p class="text-sm mt-2">Trabajo en equipo para alcanzar grandes metas.</p>
+        </div>
+        <div>
+          <div class="text-brand-orange text-4xl mb-2">🏆</div>
+          <h4 class="font-semibold text-brand-blue">Calidad</h4>
+          <p class="text-sm mt-2">Servicios y producciones musicales de la más alta calidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios (cards) -->
+    <section id="servicios" class="mt-16">
+      <h3 class="text-center text-brand-orange font-medium text-xl">Nuestros Servicios</h3>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Repite tarjeta -->
+        <article class="bg-brand-gray/20 p-6 rounded shadow-sm hover:shadow-md transition">
+          <div class="bg-brand-orange inline-flex p-3 rounded mb-4 text-white text-2xl">🎵</div>
+          <h4 class="font-semibold text-brand-blue">Creaciones Musicales Personalizadas</h4>
+          <p class="text-sm mt-2">Producción musical, composición, edición y mezcla.</p>
+        </article>
+        <article class="bg-brand-gray/20 p-6 rounded shadow-sm hover:shadow-md transition">
+          <div class="bg-brand-orange inline-flex p-3 rounded mb-4 text-white text-2xl">🔊</div>
+          <h4 class="font-semibold text-brand-blue">Sonido que Cuenta Historias</h4>
+          <p class="text-sm mt-2">Composiciones hechas a medida que complementan tu proyecto.</p>
+        </article>
+        <article class="bg-brand-gray/20 p-6 rounded shadow-sm hover:shadow-md transition">
+          <div class="bg-brand-orange inline-flex p-3 rounded mb-4 text-white text-2xl">🎤</div>
+          <h4 class="font-semibold text-brand-blue">Actuaciones Musicales Impactantes</h4>
+          <p class="text-sm mt-2">Eventos y actuaciones en vivo con producción profesional.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="mt-16 bg-brand-orange text-white py-12 rounded-lg text-center">
+      <h3 class="text-xl font-semibold">Transforma Tu Visión Musical</h3>
+      <p class="mt-2 text-sm">Deja que nosotros creemos la banda sonora de tu vida.</p>
+      <a href="#contact" class="mt-6 inline-block bg-white text-brand-orange px-5 py-2 rounded font-medium hover:bg-brand-gray transition">Contáctanos</a>
+    </section>
+
+    <!-- Testimonials (simple) -->
+    <section class="mt-16">
+      <h3 class="text-center text-brand-orange font-medium text-xl">Testimonials</h3>
+      <div class="mt-8 bg-brand-gray/30 p-8 rounded text-center text-brand-blue">Composición excepcional — "Las composiciones para mi grupo..."</div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="mt-10 grid grid-cols-3 gap-2">
+      <img src="images/thumb1.jpg" alt="" class="w-full h-28 object-cover rounded">
+      <img src="images/thumb2.jpg" alt="" class="w-full h-28 object-cover rounded">
+      <img src="images/thumb3.jpg" alt="" class="w-full h-28 object-cover rounded">
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12 grid md:grid-cols-2 gap-8 pb-16">
+      <div>
+        <h4 class="text-brand-orange font-semibold text-lg">Contáctanos</h4>
+        <p class="mt-4 text-sm">Estamos aquí para ayudarte con todas tus necesidades musicales...</p>
+        <ul class="mt-4 text-sm space-y-2 text-brand-orange">
+          <li>📍 Rue de la Musique, 75001 Paris</li>
+          <li>📞 +33 1 23 45 67 89</li>
+          <li>✉️ info@musique.artstudio3d.com</li>
+        </ul>
+      </div>
+
+      <form class="bg-white p-6 rounded shadow">
+        <label class="block text-sm text-brand-blue">Full Name<input class="mt-1 w-full border-brand-gray rounded p-2" type="text" /></label>
+        <label class="block text-sm mt-3 text-brand-blue">Email Address<input class="mt-1 w-full border-brand-gray rounded p-2" type="email" /></label>
+        <label class="block text-sm mt-3 text-brand-blue">Your Message<textarea class="mt-1 w-full border-brand-gray rounded p-2" rows="4"></textarea></label>
+        <button class="mt-4 bg-brand-orange text-white px-4 py-2 rounded font-medium hover:bg-orange-700 transition">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-brand-blue text-white mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-brand-gray">musique.artstudio3d © 2025</div>
+        <nav class="mt-4 md:mt-0 space-x-4 text-sm">
+          <a href="#inicio" class="opacity-90 hover:text-brand-orange transition">Inicio</a>
+          <a href="#servicios" class="opacity-90 hover:text-brand-orange transition">Servicios</a>
+          <a href="menciones-legales.html" class="opacity-90 hover:text-brand-orange transition">Menciones Legales</a>
+          <a href="politica-privacidad.html" class="opacity-90 hover:text-brand-orange transition">Política de Privacidad</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>
+<!-- ...existing code... -->
