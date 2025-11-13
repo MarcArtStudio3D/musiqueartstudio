@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     role="img"
+     aria-label="Speaker volume"
+     fill="none">
+  <!--
+    Local speaker/volume icon (white stroke and fill).
+    - Uses white color for contrast on orange background.
+    - Designed at 24x24 (same scale as common icon fonts).
+  -->
+  <!-- Altavoz -->
+  <path d="M11 5L6 9H2v6h4l5 4V5z"
+        stroke="#FFFFFF"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="#FFFFFF"/>
+  
+  <!-- Ondas de sonido -->
+  <path d="M15.5 8.5c.8.8 1.5 2 1.5 3.5s-.7 2.7-1.5 3.5"
+        stroke="#FFFFFF"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M18 5.5c1.5 1.5 2.5 3.5 2.5 6.5s-1 5-2.5 6.5"
+        stroke="#FFFFFF"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>

@@ -47,4 +47,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cambiar de imagen cada 3 segundos
     setInterval(nextSlide, 3000);
   }
+
+  // Manejo del formulario de contacto
+  const contactForm = document.getElementById('contactForm');
+  
+  contactForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const fullName = document.getElementById('fullName').value;
+    const emailAddress = document.getElementById('emailAddress').value;
+    const message = document.getElementById('message').value;
+    
+    // Crear el cuerpo del correo en francés con saltos de línea
+    const emailBody = `Nom du client: ${fullName}
+
+Email: ${emailAddress}
+
+Message:
+${message}`;
+    
+    // Crear el mailto link
+    const mailtoLink = `mailto:ona.sierra@artstudio3d.fr?subject=${encodeURIComponent('Message de la part du site web')}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Abrir el cliente de correo
+    window.location.href = mailtoLink;
+  });
 });
