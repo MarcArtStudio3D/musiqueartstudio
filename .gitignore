@@ -25,9 +25,6 @@ Thumbs.db
 *.swo
 *~
 
-# Build files (compiled CSS)
-src/styles.css
-
 # Temporary files
 *.tmp
 *.temp
