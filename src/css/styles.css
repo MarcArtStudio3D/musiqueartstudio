@@ -4,8 +4,8 @@
 
 /* Colores de la marca */
 :root {
-  --brand-orange: #FF6F00;
-  --brand-white: #FFFFFF;
-  --brand-blue: #1E2A2F;
-  --brand-gray: #D0D3D6;
+    --brand-orange: #ff6f00;
+    --brand-white: #ffffff;
+    --brand-blue: #1e2a2f;
+    --brand-gray: #d0d3d6;
 }
